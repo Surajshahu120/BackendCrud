@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net9.0": {
       "AutoMapper/12.0.0": {
@@ -5399,23 +5399,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\": {},
+    "C:\\Users\\QD0032\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Suraj Pawan Shahu\\source\\repos\\CrudBackend\\CrudBackend\\CrudBackend.csproj",
+      "projectUniqueName": "C:\\BackendCrud\\CrudBackend\\CrudBackend.csproj",
       "projectName": "CrudBackend",
-      "projectPath": "C:\\Users\\Suraj Pawan Shahu\\source\\repos\\CrudBackend\\CrudBackend\\CrudBackend.csproj",
-      "packagesPath": "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Suraj Pawan Shahu\\source\\repos\\CrudBackend\\CrudBackend\\obj\\",
+      "projectPath": "C:\\BackendCrud\\CrudBackend\\CrudBackend.csproj",
+      "packagesPath": "C:\\Users\\QD0032\\.nuget\\packages\\",
+      "outputPath": "C:\\BackendCrud\\CrudBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Suraj Pawan Shahu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\QD0032\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5424,10 +5424,12 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://gitlabdev.adszillamedia.in/api/v4/projects/180/packages/nuget/index.json": {}
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {}
         }
@@ -5442,10 +5444,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net9.0": {
+        "framework": "net9.0",
         "targetAlias": "net9.0",
         "dependencies": {
           "AutoMapper": {
@@ -5540,6 +5543,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.18, 9.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[9.0.18, 9.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.18, 9.0.18]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.18, 9.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5548,7 +5569,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
