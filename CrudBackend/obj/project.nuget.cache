@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cRDjGQCXNfU=",
+  "dgSpecHash": "RtoW7YCvsNo=",
   "success": true,
   "projectFilePath": "C:\\Users\\Suraj Pawan Shahu\\source\\repos\\CrudBackend\\CrudBackend\\CrudBackend.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
@@ -67,6 +68,8 @@
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\sharpgrip.fluentvalidation.autovalidation.mvc\\2.0.0\\sharpgrip.fluentvalidation.autovalidation.mvc.2.0.0.nupkg.sha512",
+    "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\sharpgrip.fluentvalidation.autovalidation.shared\\2.0.0\\sharpgrip.fluentvalidation.autovalidation.shared.2.0.0.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.6\\swashbuckle.aspnetcore.swagger.9.0.6.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.6\\swashbuckle.aspnetcore.swaggergen.9.0.6.nupkg.sha512",
     "C:\\Users\\Suraj Pawan Shahu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.6\\swashbuckle.aspnetcore.swaggerui.9.0.6.nupkg.sha512",

@@ -11,6 +11,7 @@ C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Humanizer.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\MediatR.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\MediatR.Contracts.dll
@@ -58,6 +59,8 @@ C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\SharpGrip.FluentValidation.AutoValidation.Mvc.dll
+C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\SharpGrip.FluentValidation.AutoValidation.Shared.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -161,6 +164,7 @@ C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\CrudBackend.csproj.CoreCompileInputs.cache
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\CrudBackend.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\CrudBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\CrudBackend.sourcelink.json
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Suraj Pawan Shahu\source\repos\CrudBackend\CrudBackend\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
