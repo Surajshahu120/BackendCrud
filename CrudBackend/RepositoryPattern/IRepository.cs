@@ -9,6 +9,7 @@ namespace CrudBackend.RepositoryPattern
         Task DeleteData(T id);
         Task<IEnumerable<T>> GetAllData();
         Task<T> GetDataById(int id);
+        IQueryable<T> GetAllQueryable();
 
     }
 }
