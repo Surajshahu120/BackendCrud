@@ -34,5 +34,9 @@ namespace CrudBackend.RepositoryPattern
         {
             return await _dbSet.FindAsync(id); ;
         }
+        public IQueryable<T> GetAllQueryable()
+        {
+            return _dbSet.AsQueryable();
+        }
     }
 }

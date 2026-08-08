@@ -1,6 +1,9 @@
-﻿namespace CrudBackend.Features.AddressFeature.DeleteAddress
+﻿using MediatR;
+
+namespace CrudBackend.Features.AddressFeature.DeleteAddress
 {
-    public class DeleteAddressRequestModel
+    public class DeleteAddressRequestModel : IRequest<DeleteAddressResponseModel>
     {
+        public int id { get; set; }
     }
 }

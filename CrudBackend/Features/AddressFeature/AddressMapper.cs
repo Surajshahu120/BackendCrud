@@ -7,12 +7,10 @@ namespace CrudBackend.Features.AddressFeature
     {
         public AddressMapper() {
             CreateMap<Addresses, AddOrUpdateAddressRepresentationalModel>()
-                 .ForMember(dest => dest.employeeId, tx => tx.MapFrom(src => src.EmployeeId))
                  .ForMember(dest => dest.street, tx => tx.MapFrom(src => src.Street))
                  .ForMember(dest => dest.apartment, tx => tx.MapFrom(src => src.Apartment))
                  .ForMember(dest => dest.buildingNo, tx => tx.MapFrom(src => src.BuildingNo));
             CreateMap<AddOrUpdateAddressRepresentationalModel, Addresses>()
-     .ForMember(dest => dest.EmployeeId, tx => tx.MapFrom(src => src.employeeId))
      .ForMember(dest => dest.Street, tx => tx.MapFrom(src => src.street))
      .ForMember(dest => dest.Apartment, tx => tx.MapFrom(src => src.apartment))
      .ForMember(dest => dest.BuildingNo, tx => tx.MapFrom(src => src.buildingNo));

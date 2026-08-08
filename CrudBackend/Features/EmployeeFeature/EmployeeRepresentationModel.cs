@@ -13,6 +13,6 @@ namespace CrudBackend.Features.EmployeeFeature
         public string gender { get; set; }
         public DateOnly birthday { get; set; }
         public bool isMarried { get; set; }
-        public ICollection<Addresses> addresses { get; set; }
+        public List<Addresses> addresses { get; set; }
     }
 }

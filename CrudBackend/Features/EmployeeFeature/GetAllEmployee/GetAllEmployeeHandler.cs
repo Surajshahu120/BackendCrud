@@ -2,6 +2,7 @@
 using CrudBackend.Entities;
 using CrudBackend.RepositoryPattern;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrudBackend.Features.EmployeeFeature.GetAllEmployee
 {
@@ -16,7 +17,7 @@ namespace CrudBackend.Features.EmployeeFeature.GetAllEmployee
         }
         public async Task<GetAllEmployeeResponseModel> Handle(GetAllEmployeeRequestModel request, CancellationToken cancellationToken)
         {
-            var data = await _employeeRepository.GetAllData();
+            var data = await _employeeRepository.GetAllQueryable().Include(x => x.Addresses).ToListAsync();
             if (data == null)
             {
                 return new GetAllEmployeeResponseModel
