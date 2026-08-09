@@ -2,5 +2,7 @@
 {
     public class UpdateAddressResponseModel
     {
+        public bool isUpdated { get; set; }
+        public AddressRepresentationalModel address { get; set; }
     }
 }

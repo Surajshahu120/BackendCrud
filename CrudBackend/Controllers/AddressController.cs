@@ -1,5 +1,8 @@
 ﻿using CrudBackend.Features.AddressFeature.AddAddress;
 using CrudBackend.Features.AddressFeature.DeleteAddress;
+using CrudBackend.Features.AddressFeature.GetAddressById;
+using CrudBackend.Features.AddressFeature.GetAllAddress;
+using CrudBackend.Features.AddressFeature.UpdateAddress;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -28,5 +31,24 @@ namespace CrudBackend.Controllers
             var req = await _mediator.Send(request);
             return Accepted(req);
         }
+        [HttpGet]
+        public async Task<ActionResult<GetAllAddressResponseModel>> GetAllAddress()
+        {
+            var req = await _mediator.Send(new GetAllAddressRequestModel());
+            return Ok(req);
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<GetAddressByIdResponseModel>> GetAddressById([FromRoute]GetAddressByIdRequestModel request)
+        {
+            var req = await _mediator.Send(request);
+            return Ok(req);
+        }
+        [HttpPut]
+        public async Task<ActionResult<UpdateAddressResponseModel>> GetAllAddress([FromBody]UpdateAddressRequestModel request)
+        {
+            var req = await _mediator.Send(request);
+            return Ok(req);
+        }
+
     }
 }
