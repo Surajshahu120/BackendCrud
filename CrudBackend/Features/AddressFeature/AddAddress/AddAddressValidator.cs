@@ -10,11 +10,11 @@ namespace CrudBackend.Features.AddressFeature.AddAddress
         public AddAddressValidator(IRepository<Employee> employeeRepository) {
             _employeeRepository = employeeRepository;
             RuleFor(x => x.address.employeeId).NotEmpty().WithMessage("It cannot be null or empty")
-                .Must(IsValidId).WithMessage("employee id does not exist");
+                .MustAsync(IsValidId).WithMessage("employee id does not exist");
         }
-        public bool IsValidId(int id)
+        public async Task<bool> IsValidId(int id, CancellationToken cancellationToken)
         {
-            var data = _employeeRepository.GetDataById(id);
+            var data = await _employeeRepository.GetDataById(id);
             if (data == null) { 
             return false;
             }

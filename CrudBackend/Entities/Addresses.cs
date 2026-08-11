@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace CrudBackend.Entities
 {
@@ -13,6 +14,7 @@ namespace CrudBackend.Entities
         public string? Street { get; set; }
         [ForeignKey(nameof(Employee))]
         public int EmployeeId { get; set; }
+        [JsonIgnore]
         public Employee Employee { get; set; }
     }
 }

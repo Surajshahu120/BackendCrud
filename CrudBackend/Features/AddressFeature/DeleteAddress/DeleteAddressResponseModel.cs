@@ -2,10 +2,7 @@
 {
     public class DeleteAddressResponseModel
     {
-        public bool isupdated { get; set; }
-        public string message
-        {
-            get; set;
-        }
+        public string message { get; set; } = "Data deleted Successfully";
+        public bool isDeleted { get; set; }
     }
 }

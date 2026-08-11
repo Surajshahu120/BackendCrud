@@ -2,5 +2,7 @@
 {
     public class GetAddressByIdResponseModel
     {
+        public string message { get; set; }
+        public AddressRepresentationalModel address { get; set; }
     }
 }

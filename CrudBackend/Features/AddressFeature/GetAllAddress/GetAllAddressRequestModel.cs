@@ -1,6 +1,8 @@
-﻿namespace CrudBackend.Features.AddressFeature.GetAllAddress
+﻿using MediatR;
+
+namespace CrudBackend.Features.AddressFeature.GetAllAddress
 {
-    public class GetAllAddressRequestModel
+    public class GetAllAddressRequestModel : IRequest<GetAllAddressResponseModel>
     {
     }
 }

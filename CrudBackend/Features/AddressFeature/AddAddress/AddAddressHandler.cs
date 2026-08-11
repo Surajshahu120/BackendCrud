@@ -19,7 +19,7 @@ namespace CrudBackend.Features.AddressFeature.AddAddress
         }
         public async Task<AddAddressResponseModel> Handle(AddAddressRequestModel request, CancellationToken cancellationToken)
         {
-            var resMap = _mapper.Map<Addresses>(request);
+            var resMap = _mapper.Map<Addresses>(request.address);
             if (resMap == null) {
                 return new AddAddressResponseModel
                 {

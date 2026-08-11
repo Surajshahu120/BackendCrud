@@ -1,6 +1,9 @@
-﻿namespace CrudBackend.Features.AddressFeature.UpdateAddress
+﻿using MediatR;
+
+namespace CrudBackend.Features.AddressFeature.UpdateAddress
 {
-    public class UpdateAddressRequestModel
+    public class UpdateAddressRequestModel : IRequest<UpdateAddressResponseModel>
     {
+        public AddOrUpdateAddressRepresentationalModel address { get; set; }
     }
 }

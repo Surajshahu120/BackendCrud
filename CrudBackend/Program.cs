@@ -1,4 +1,5 @@
 using CrudBackend.Data;
+using CrudBackend.Middleware;
 using CrudBackend.RepositoryPattern;
 using CrudBackend.TokenService;
 using CrudBackend.UnitWorkPattern;
@@ -91,6 +92,7 @@ options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecu
 });
 
 var app = builder.Build();
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI();
 
