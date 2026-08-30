@@ -29,7 +29,7 @@ namespace CrudBackend.Controllers
             return data;
         }
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<ActionResult<GetAllEmployeeResponseModel>> GetAllEmployee()
         {
             var data = await _mediator.Send(new GetAllEmployeeRequestModel());

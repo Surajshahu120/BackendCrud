@@ -2,6 +2,7 @@
 using CrudBackend.RepositoryPattern;
 using CrudBackend.UnitWorkPattern;
 using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace CrudBackend.Features.EmployeeFeature.DeleteEmployeeById
 {
@@ -9,10 +10,13 @@ namespace CrudBackend.Features.EmployeeFeature.DeleteEmployeeById
     {
         private readonly IRepository<Employee> _employeeRepository;
         private readonly IUnitOfWork _unitOfWork;
-        public DeleteEmployeeByIdHandler(IRepository<Employee> employeeRepository, IUnitOfWork unitOfWork)
+        private readonly IMemoryCache _memoryCache;
+
+        public DeleteEmployeeByIdHandler(IRepository<Employee> employeeRepository, IUnitOfWork unitOfWork, IMemoryCache memoryCache)
         {
             _employeeRepository = employeeRepository;
             _unitOfWork = unitOfWork;
+            _memoryCache = memoryCache;
         }
         public async Task<DeleteEmployeeByIdResponseModel> Handle(DeleteEmployeeByIdRequestModel request, CancellationToken cancellationToken)
         {
@@ -27,6 +31,7 @@ namespace CrudBackend.Features.EmployeeFeature.DeleteEmployeeById
             }
             await _employeeRepository.DeleteData(existingData);
             await _unitOfWork.CommitAsync();
+            _memoryCache.Remove("Employees");
             return new DeleteEmployeeByIdResponseModel
             {
                 isDeleted = true
