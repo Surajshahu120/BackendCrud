@@ -4,6 +4,7 @@ using CrudBackend.Features.EmployeeFeature.GetAllEmployee;
 using CrudBackend.Features.EmployeeFeature.GetAllEmployeeById;
 using CrudBackend.RepositoryPattern;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrudBackend.Features.EmployeeFeature.GetEmployeeById
 {
@@ -18,7 +19,7 @@ namespace CrudBackend.Features.EmployeeFeature.GetEmployeeById
         }
         public async Task<GetEmployeeByIdResponseModel> Handle(GetEmployeeByIdRequestModel request, CancellationToken cancellationToken)
         {
-            var existingData = await _employeeRepository.GetDataById(request.id);
+            var existingData = await _employeeRepository.GetAllQueryable().Include(x => x.Addresses).FirstOrDefaultAsync(x => x.Id == request.id);
             if (existingData == null) {
                 return new GetEmployeeByIdResponseModel
                 {
