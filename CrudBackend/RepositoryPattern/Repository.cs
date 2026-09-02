@@ -22,7 +22,7 @@ namespace CrudBackend.RepositoryPattern
             _dbSet.Update(entity);
             return entity;
         }
-        public async Task<T[]> BulkDataAdd(T[] entity)
+        public async Task<List<T>> BulkDataAdd(List<T> entity)
         {
             await _dbSet.AddRangeAsync(entity);
             return entity;
