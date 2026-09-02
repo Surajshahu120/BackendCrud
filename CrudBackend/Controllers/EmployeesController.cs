@@ -1,4 +1,5 @@
 ﻿using CrudBackend.Features.EmployeeFeature.AddEmployee;
+using CrudBackend.Features.EmployeeFeature.BulkAddEmployee;
 using CrudBackend.Features.EmployeeFeature.DeleteEmployeeById;
 using CrudBackend.Features.EmployeeFeature.GetAllEmployee;
 using CrudBackend.Features.EmployeeFeature.GetAllEmployeeById;
@@ -52,6 +53,13 @@ namespace CrudBackend.Controllers
         [HttpPut]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<UpdateEmployeeResponseModel>> Handle(UpdateEmployeeRequestModel request)
+        {
+            var data = await _mediator.Send(request);
+            return data;
+        }
+        [HttpPost]
+        [Route("BulkAddEmployee")]
+        public async Task<BulkAddEmployeeResponseModel> BulkAddEmployee([FromBody] BulkAddEmployeeRequestModel request)
         {
             var data = await _mediator.Send(request);
             return data;

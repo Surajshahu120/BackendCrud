@@ -28,6 +28,7 @@ namespace CrudBackend.Features.EmployeeFeature.BulkAddEmployee
                 };
             }
             var res=await _employeeRepository.BulkDataAdd(employeeEntities);
+            await _unitOfWork.CommitAsync();
             return new BulkAddEmployeeResponseModel
             {
                 employeeData = _mapper.Map<List<EmployeeRepresentationModel>>(res)
